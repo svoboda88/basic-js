@@ -1,3 +1,5 @@
+const { NotImplementedError } = require('../extensions/index.js');
+
 function createDreamTeam(members) {
   if(!members || !members.length) return false;
   
