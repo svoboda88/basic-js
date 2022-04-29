@@ -1,5 +1,5 @@
 function createDreamTeam(members) {
-  if(!members?.length) return false;
+  if(!members || !members.length) return false;
   
   const arrOfStrings = members.filter((el) => {
     return typeof el === 'string';
