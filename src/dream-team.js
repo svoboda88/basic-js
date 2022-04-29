@@ -5,7 +5,7 @@ function createDreamTeam(members) {
   
   const arrOfStrings = members.filter((el) => {
     return typeof el === 'string';
-  }).map(el => el.replaceAll(' ', ''));
+  }).map(el => el.replace(/ /g, ''));
 
   const firstLettersArr = arrOfStrings.map((el) => el[0].toUpperCase()).sort();
   if(!firstLettersArr.length) return false
